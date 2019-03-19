@@ -1,0 +1,6 @@
+framework module TSYSDK {
+  umbrella header "TSYSDK.h"
+
+  export *
+  module * { export * }
+}
