@@ -7,7 +7,7 @@ s.name         = 'TSYSDK'
 s.version      = '2.2.6'
 
 #许可证
-s.license      = { :type => 'MIT' }
+s.license      = { :type => "MIT", :file => "LICENSE" }
 
 #项目主页地址
 s.homepage     = 'https://github.com/TSYSDK/TSYSDK-IOS'
@@ -40,6 +40,7 @@ s.libraries = 'c++','z'
 s.frameworks = 'Security', 'SystemConfiguration' 'SystemConfiguration', 'CoreTelephony' 'QuartzCore', 'CoreText' 'CoreGraphics' 'CFNetwork', 'CoreMotion' 'JavaScriptCore'
 
 s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/user/include/libxml2" }
-s.resource_bundles = 'TSYSDK/TSYSDKBundle/TSYSDK.bundle'
-
+s.resource_bundles = {
+'TSYSDK' => ['TSYSDK/TSYSDKBundle/*']
+}
 end
