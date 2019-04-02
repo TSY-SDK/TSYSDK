@@ -28,7 +28,7 @@ Pod::Spec.new do |s|
 s.source_files = 'TSYSDK.framework/Headers/*.{h}'
 #s.source_files = 'TSYSDK/**/**/*.{h,m,mm}'
     #你的SDK路径
-    s.vendored_frameworks = 'TSYSDK.framework'
+    s.vendored_frameworks = 'TSYSDK.framework','AlipaySDK.framework'
 
     #SDK头文件路径
     s.public_header_files = 'TSYSDK.framework/Headers/*.{h}'
@@ -40,4 +40,5 @@ s.source_files = 'TSYSDK.framework/Headers/*.{h}'
     s.frameworks = 'Security', 'SystemConfiguration' 'SystemConfiguration', 'CoreTelephony' 'QuartzCore', 'CoreText' 'CoreGraphics' 'CFNetwork', 'CoreMotion' 'JavaScriptCore'
     #s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/user/include/libxml2" }
     s.resource = 'TSYSDKBundle'
+s.xcconfig = {'OTHER_LDFLAGS' => '-ObjC'}
 end
