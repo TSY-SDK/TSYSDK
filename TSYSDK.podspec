@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
     s.license      = { :type => 'Copyright', :text => 'TSY Inc. 2019' }
 
     #项目主页地址
-    s.homepage     = 'https://github.com/TSYSDK/TSYSDK-IOS'
+    s.homepage     = 'https://github.com/TSY-SDK/TSYSDK'
 
     #作者
     s.authors      = { '陈红' => '971063910@qq.com' }
@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
     s.summary      = '淘手游支付SDK.'
 
     #项目的地址 （注意这里的tag位置，可以自己写也可以直接用s.version，但是与s.version一定要统一）
-    s.source       = { :git => 'https://github.com/TSYSDK/TSYSDK-IOS.git', :tag => s.version }
+    s.source       = { :git => 'https://github.com/TSY-SDK/TSYSDK.git', :tag => s.version }
 
     #支持最小系统版本
     s.platform = :ios, '8.0'
