@@ -31,16 +31,15 @@ s.source_files = 'TSYSDK/TSYSDK.framework/Headers/*.{h}'
 s.vendored_frameworks = 'TSYSDK/TSYSDK.framework'
 
 #SDK头文件路径
-s.public_header_files = 'TSYSDK/TSYSDK.framework/Headers/*.{h}'
-
+#s.public_header_files = 'TSYSDK/TSYSDK.framework/Headers/*.{h}'
+s.public_header_files = '**/*.{h}'
 #依赖库
 s.libraries = 'c++','z'
 
 #依赖库
 s.frameworks = 'Security', 'SystemConfiguration' 'SystemConfiguration', 'CoreTelephony' 'QuartzCore', 'CoreText' 'CoreGraphics' 'CFNetwork', 'CoreMotion' 'JavaScriptCore'
 
-s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/user/include/libxml2" }
-s.resource_bundles = {
-'TSYSDK' => ['TSYSDK/TSYSDKBundle/*']
+#s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/user/include/libxml2" }
+spec.resource     = 'TSYSDK/TSYSDKBundle/TSYSDK.Bundle
 }
 end
