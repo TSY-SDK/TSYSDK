@@ -38,8 +38,6 @@ s.libraries = 'c++','z'
 
 #依赖库
 s.frameworks = 'Security', 'SystemConfiguration' 'SystemConfiguration', 'CoreTelephony' 'QuartzCore', 'CoreText' 'CoreGraphics' 'CFNetwork', 'CoreMotion' 'JavaScriptCore'
-
 #s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/user/include/libxml2" }
-spec.resource     = 'TSYSDK/TSYSDKBundle/TSYSDK.Bundle
-}
+s.resource = 'TSYSDK/TSYSDKBundle/TSYSDK.Bundle'
 end
