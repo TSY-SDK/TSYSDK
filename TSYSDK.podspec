@@ -22,7 +22,7 @@ Pod::Spec.new do |s|
     s.source       = { :git => 'https://github.com/TSY-SDK/TSYSDK.git', :tag => s.version }
 
     #支持最小系统版本
-    s.platform = :ios, '8.0'
+    s.platform = :ios, '9.0'
 
     #需要包含的源文件
 s.source_files = 'TSYSDK.framework/Headers/*.{h}'
